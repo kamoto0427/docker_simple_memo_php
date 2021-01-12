@@ -1,0 +1,5 @@
+[12-Jan-2021 18:24:27 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in /var/www/html/common/database.php on line 9
+[12-Jan-2021 18:25:21 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in /var/www/html/common/database.php on line 9
+[12-Jan-2021 18:25:36 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in /var/www/html/common/database.php on line 9
+[12-Jan-2021 18:26:41 Asia/Tokyo] PHP Notice:  Undefined index: user-email in /var/www/html/user/action/register.php on line 5
+[12-Jan-2021 18:26:41 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/user/action/register.php on line 14
