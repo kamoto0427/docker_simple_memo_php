@@ -21,4 +21,7 @@
     echo $e->getMessage();
     exit;
   }
+
+  header('Location: ../../memo/');
+  exit;
 ?>
