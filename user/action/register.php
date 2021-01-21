@@ -1,4 +1,6 @@
 <?php
+  session_start();
+  require '../../common/validation.php';
   require '../../common/database.php';
 
   $user_name = $_POST['user_name'];
@@ -6,6 +8,27 @@
   $user_password = $_POST['user_password'];
 
   $database_handler = getDatabaseConnection();
+
+  $_SESSION['errors'] = [];
+
+  // 空チェック
+  emptyCheck($_SESSION['errors'],$user_name,"ユーザー名を入力してください。");
+  emptyCheck($_SESSION['errors'],$user_email,"メールアドレスを入力してください。");
+  emptyCheck($_SESSION['errors'],$user_password,"パスワードを入力してください。");
+
+  // 文字数のチェック
+  stringMaxSizeCheck($_SESSION['errors'],$user_name,"名前は255文字以内で入力してください。");
+  stringMaxSizeCheck($_SESSION['errors'],$user_email,"メールアドレスは255文字以内で入力してください。");
+  stringMaxSizeCheck($_SESSION['errors'],$user_password,"パスワードは255文字以内で入力してください。");
+  stringMinSizeCheck($_SESSION['errors'],$user_passwird,"パスワードは8文字以上で入力してください。");
+
+  if(!$_SESSION['errors']) {
+
+  }
+
+  if($_SESSION['errors']) {
+    
+  }
 
   try {
     if($statement = $database_handler->prepare('INSERT INTO users (name, email, password) VALUES (:name, :email, :password)')) {
