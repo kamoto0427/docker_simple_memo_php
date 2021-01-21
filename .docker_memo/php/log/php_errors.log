@@ -55,3 +55,5 @@
 [21-Jan-2021 22:27:53 Asia/Tokyo] PHP Notice:  Undefined variable: user_passwird in /var/www/html/user/action/register.php on line 23
 [21-Jan-2021 22:27:55 Asia/Tokyo] PHP Notice:  Undefined variable: user_passwird in /var/www/html/user/action/register.php on line 23
 [21-Jan-2021 22:52:41 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/user/action/register.php on line 48
+[22-Jan-2021 07:56:11 Asia/Tokyo] PHP Parse error:  syntax error, unexpected '}', expecting ';' or ',' in /var/www/html/login/index.php on line 22
+[22-Jan-2021 07:57:23 Asia/Tokyo] PHP Parse error:  syntax error, unexpected 'unset' (T_UNSET), expecting ';' or ',' in /var/www/html/login/index.php on line 24
