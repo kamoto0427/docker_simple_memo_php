@@ -23,11 +23,15 @@
   stringMinSizeCheck($_SESSION['errors'],$user_passwird,"パスワードは8文字以上で入力してください。");
 
   if(!$_SESSION['errors']) {
-
+    mailAddressCheck($_SESSION['errors'],$user_name,"正しいメールアドレスを入力してください。");
+    halfAlphanumericCheck($_SESSION['errors'],$user_name,"ユーザー名は半角英数字で入力してください。");
+    halfAlphanumericCheck($_SESSION['errors'],$user_password,"パスワードは半角英数字で入力してください。");
+    mailAddressDuplicationCheck($_SESSION['errors'],$user_email,"既に登録されているメールアドレスです。");
   }
 
   if($_SESSION['errors']) {
-    
+    header('Location:../../user/');
+    exit;
   }
 
   try {
