@@ -49,6 +49,11 @@
       $statement->bindParam(':email', $user_email);
       $statement->bindParam(':password', $password);
       $statement->execute();
+
+      $_SESSION['user'] = [
+        'name' => $user_name,
+        'id' => lastInsertId()
+      ];
     }
   }
   catch (Throwable $e) {
