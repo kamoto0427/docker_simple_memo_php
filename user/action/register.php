@@ -52,7 +52,7 @@
 
       $_SESSION['user'] = [
         'name' => $user_name,
-        'id' => lastInsertId()
+        'id' => $database_handler->lastInsertId()
       ];
     }
   }

@@ -1,5 +1,6 @@
 <?php
   session_start();
+
   require '../../common/validation.php';
   require '../../common/database.php';
 
@@ -40,7 +41,7 @@
       $_SESSION['errors'] = [
         'メールアドレスまたはパスワードが間違っています。'
       ];
-      header('Location:../../login/');
+      header('Location: ../../login/');
       exit;
     }
 
@@ -53,13 +54,13 @@
         'id' => $id
       ];
 
-      header('Location:../../memo/');
+      header('Location: ../../memo/');
       exit;
     } else {
       $_SESSION['errors'] = [
         'メールアドレスまたはパスワードが間違っています。'
       ];
-      header('Location:../../login/');
+      header('Location: ../../login/');
     }
   }
 ?>
