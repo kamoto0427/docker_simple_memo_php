@@ -118,3 +118,5 @@ Stack trace:
 [24-Jan-2021 12:22:03 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 20
 [24-Jan-2021 12:22:14 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 19
 [24-Jan-2021 12:22:14 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 20
+[24-Jan-2021 12:35:54 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 19
+[24-Jan-2021 12:35:54 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 20
