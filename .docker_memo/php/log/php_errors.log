@@ -112,3 +112,5 @@ Stack trace:
 [24-Jan-2021 12:00:12 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 20
 [24-Jan-2021 12:00:30 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 19
 [24-Jan-2021 12:00:30 Asia/Tokyo] PHP Notice:  Only variables should be passed by reference in /var/www/html/memo/action/update.php on line 20
+[24-Jan-2021 12:17:44 Asia/Tokyo] PHP Warning:  require(../../auth.php): failed to open stream: No such file or directory in /var/www/html/memo/action/delete.php on line 2
+[24-Jan-2021 12:17:44 Asia/Tokyo] PHP Fatal error:  require(): Failed opening required '../../auth.php' (include_path='.:/usr/local/lib/php') in /var/www/html/memo/action/delete.php on line 2
